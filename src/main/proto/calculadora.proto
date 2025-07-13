@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option java_package = "service";
+option java_multiple_files = true;
+
+service ServicioCalculadora {
+   rpc sumar(DosOperandos) returns(Resultado);
+   rpc restar(DosOperandos) returns(Resultado);
+   rpc multiplicar(DosOperandos) returns(Resultado);
+   rpc dividir(DosOperandos) returns(Resultado);
+   rpc elevarAlCuadrado(Operando) returns(Resultado);
+   rpc memoriaACero(google.protobuf.Empty) returns(google.protobuf.Empty);
+   rpc memoriaRecuperar(google.protobuf.Empty) returns(Resultado);
+   rpc memoriaAniadir(google.protobuf.Empty) returns(google.protobuf.Empty);
+   rpc ultimoResultado(google.protobuf.Empty) returns(Resultado);
+}
+
+message Operando {
+	double number = 1;
+}
+
+message DosOperandos {
+   double number1 = 1;
+   double number2 = 2;
+}
+
+message Resultado {
+ 	double resultado = 1;
+}
+
+
+
