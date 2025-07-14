@@ -23,8 +23,8 @@ public class PruebaClienteCalculadora {
                 ServicioCalculadoraGrpc.newBlockingStub(channel);
 
         // Ejemplo: sumar 10 + 5
-        DosOperandos suma = DosOperandos.newBuilder().setNumber1(10).setNumber2(5).build();
-        Resultado resultadoSuma = stub.sumar(suma);
+        DosOperandos ops = DosOperandos.newBuilder().setNumber1(10).setNumber2(5).build();
+        Resultado resultadoSuma = stub.sumar(ops);
         System.out.println("Suma: " + resultadoSuma.getResultado());
 
         // Ejemplo: elevar al cuadrado 7
@@ -32,7 +32,7 @@ public class PruebaClienteCalculadora {
         Resultado resCuadrado = stub.elevarAlCuadrado(op);
         System.out.println("7 al cuadrado: " + resCuadrado.getResultado());
 
-        // Añadir 20 a la memoria
+        // Añadir el último resultado a la memoria
         stub.memoriaAniadir(Empty.getDefaultInstance());
 
         // Recuperar memoria

@@ -5,10 +5,6 @@ public class OperadorAritmetico {
 	double memoria = 0.0;
 	double ultimo = 0.0;
 	
-	public OperadorAritmetico() {
-		
-	}
-	
 	public double suma(double operando1, double operando2) {
 		double result = operando1 + operando2;
 		this.ultimo = result;

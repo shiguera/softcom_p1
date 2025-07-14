@@ -7,16 +7,15 @@ operador_aritmetico/OperadorAritmetico.class
 service/DosOperandosOrBuilder.class
 service/ServicioCalculadoraGrpc$ServicioCalculadoraStub.class
 service/ServicioCalculadoraGrpc$AsyncService.class
-service/server/CalculadoraServer$1.class
 calculadora/AppCalculadora.class
 service/ServicioCalculadoraGrpc$ServicioCalculadoraMethodDescriptorSupplier.class
+service/client/PruebaClienteCalculadora.class
 service/DosOperandos$Builder.class
 service/ServicioCalculadoraGrpc$1.class
+service/client/ClienteCalculadora.class
 service/Calculadora.class
 service/Operando$1.class
-service/client/CalculadoraPruebaCliente.class
-service/server/CalculadoraServer.class
-service/client/CalculadoraCliente.class
+service/server/ServidorCalculadora.class
 calculadora/AppCalculadoraRemota.class
 service/ServicioCalculadoraGrpc$4.class
 calculadora/AdaptadorCalculadoraRemota.class
@@ -25,6 +24,7 @@ service/Resultado$1.class
 service/OperandoOrBuilder.class
 service/ServicioCalculadoraGrpc$ServicioCalculadoraImplBase.class
 service/ServicioCalculadoraGrpc$ServicioCalculadoraBlockingV2Stub.class
+service/server/ServidorCalculadora$1.class
 service/Operando$Builder.class
 service/ServicioCalculadoraGrpc$ServicioCalculadoraFutureStub.class
 service/ServicioCalculadoraGrpc$ServicioCalculadoraBlockingStub.class
